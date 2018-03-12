@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+<<<<<<< HEAD
+  <suite name="TmpSuite" duration-ms="178250" started-at="2018-03-12T02:02:50Z" finished-at="2018-03-12T02:05:48Z">
+=======
+  <suite name="TmpSuite" duration-ms="96325" started-at="2018-03-11T16:27:03Z" finished-at="2018-03-11T16:28:39Z">
+>>>>>>> branch 'master' of https://github.com/sh51995/zidonghua.git
+    <groups>
+    </groups>
+<<<<<<< HEAD
+    <test name="TmpTest" duration-ms="178250" started-at="2018-03-12T02:02:50Z" finished-at="2018-03-12T02:05:48Z">
+=======
+    <test name="TmpTest" duration-ms="96325" started-at="2018-03-11T16:27:03Z" finished-at="2018-03-11T16:28:39Z">
+>>>>>>> branch 'master' of https://github.com/sh51995/zidonghua.git
+      <class name="ui_app.testcase.test">
+<<<<<<< HEAD
+        <test-method status="PASS" signature="testBoCe()[pri:0, instance:ui_app.testcase.test@136432db]" name="testBoCe" duration-ms="178232" started-at="2018-03-12T10:02:50Z" description="波测流程" finished-at="2018-03-12T10:05:48Z">
+=======
+        <test-method status="PASS" signature="testBoCe()[pri:0, instance:ui_app.testcase.test@7dd3981e]" name="testBoCe" duration-ms="96325" started-at="2018-03-12T00:27:03Z" description="波测流程" finished-at="2018-03-12T00:28:39Z">
+>>>>>>> branch 'master' of https://github.com/sh51995/zidonghua.git
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoCe -->
+      </class> <!-- ui_app.testcase.test -->
+    </test> <!-- TmpTest -->
+  </suite> <!-- TmpSuite -->
+</testng-results>

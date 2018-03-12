@@ -1,0 +1,21 @@
+2018-02-27 at 11:02:45 CST INFO  ui_app.testcase.TestLoginCfrontAPP 88 logout - C端已注销
+2018-02-27 at 11:03:07 CST ERROR ui_app.testcase.TestLoginCfrontAPP 92 logout - Clogoutorg.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
+System info: host: 'TRSDWGV4I4MW7OV', ip: '192.168.0.153', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_141'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.gl365.android.member, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=A10ABN5GQRHS, platform=LINUX, appActivity=com.gl365.android.member.MainActivity, desired={appPackage=com.gl365.android.member, appActivity=com.gl365.android.member.MainActivity, platformVersion=23, automationName=Appium, sessionOverride=true, unicodeKeyboard=true, platformName=Android, deviceName=A10ABN5GQRHS, resetKeyboard=false}, platformVersion=5.1, webStorageEnabled=false, locationContextEnabled=false, automationName=Appium, browserName=Android, takesScreenshot=true, javascriptEnabled=true, sessionOverride=true, unicodeKeyboard=true, platformName=Android, resetKeyboard=false}]
+Session ID: 38a23e4d-6517-4be8-847d-65fecd5dd8e6
+2018-02-27 at 11:20:53 CST INFO  ui_app.testcase.TestLoginCfrontAPP 88 logout - C端已注销
+2018-02-27 at 11:24:13 CST INFO  util.mysql.server.memberdata.UserImpl 11 getUserByMobile - =====进入getUserDevice
+2018-02-27 at 11:24:13 CST INFO  util.mysql.server.memberdata.UserImpl 12 getUserByMobile - =====mobile为: 13682506855
+2018-02-27 at 11:32:22 CST INFO  ui_app.testcase.TestLoginCfrontAPP 88 logout - C端已注销
+2018-02-27 at 11:32:45 CST ERROR ui_app.testcase.TestLoginCfrontAPP 92 logout - Clogoutorg.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.45 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
+System info: host: 'TRSDWGV4I4MW7OV', ip: '192.168.0.153', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_141'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.gl365.android.member, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=A10ABN5GQRHS, platform=LINUX, appActivity=com.gl365.android.member.MainActivity, desired={appPackage=com.gl365.android.member, appActivity=com.gl365.android.member.MainActivity, platformVersion=23, automationName=Appium, sessionOverride=true, unicodeKeyboard=true, platformName=Android, deviceName=A10ABN5GQRHS, resetKeyboard=false}, platformVersion=5.1, webStorageEnabled=false, locationContextEnabled=false, automationName=Appium, browserName=Android, takesScreenshot=true, javascriptEnabled=true, sessionOverride=true, unicodeKeyboard=true, platformName=Android, resetKeyboard=false}]
+Session ID: 02cb6ed5-7c47-4c8a-9b2a-0d7590f74984

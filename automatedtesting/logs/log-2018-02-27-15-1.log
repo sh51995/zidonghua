@@ -1,0 +1,18 @@
+2018-02-27 at 15:03:49 CST ERROR ui_app.testcase.TestWxApp 28 testWXPays - 微信支付第0失败
+2018-02-27 at 15:05:49 CST ERROR ui_app.testcase.TestLogicBfrontAPP 32 login - B端登录0失败
+2018-02-27 at 15:11:11 CST INFO  util.httpclient.HTTPClient 31 httpResponse - =====进入httpResponse
+2018-02-27 at 15:11:11 CST INFO  util.httpclient.HTTPClient 32 httpResponse - =====参数打印，type： post==url: https://oapi.dingtalk.com/robot/send?access_token=044f2152f97f00db9da29be77c598ec829a47bcb7bc2696a5df42730d2bd1f2e==header:  {Content-Type=application/json;charset=UTF-8}==body:  {"msgtype":"text","text":{"content":"C端注销失败"}}
+2018-02-27 at 15:11:11 CST INFO  util.httpclient.HTTPClient 43 httpResponse - =====判断头信息是否为空：false
+2018-02-27 at 15:11:11 CST INFO  util.httpclient.HTTPClient 45 httpResponse - ======添加请求头信息
+2018-02-27 at 15:11:11 CST INFO  util.httpclient.HTTPClient 48 httpResponse - Content-Type:application/json;charset=UTF-8
+2018-02-27 at 15:11:11 CST INFO  util.httpclient.HTTPClient 56 httpResponse - {"msgtype":"text","text":{"content":"C端注销失败"}}
+2018-02-27 at 15:11:11 CST INFO  util.httpclient.HTTPClient 194 dopost - =====响应码为：HTTP/1.1 200 OK
+2018-02-27 at 15:11:11 CST INFO  util.httpclient.HTTPClient 197 dopost - =====转换后的实体：{"errcode":0,"errmsg":"ok"}
+2018-02-27 at 15:16:01 CST INFO  util.httpclient.HTTPClient 31 httpResponse - =====进入httpResponse
+2018-02-27 at 15:16:01 CST INFO  util.httpclient.HTTPClient 32 httpResponse - =====参数打印，type： post==url: https://oapi.dingtalk.com/robot/send?access_token=044f2152f97f00db9da29be77c598ec829a47bcb7bc2696a5df42730d2bd1f2e==header:  {Content-Type=application/json;charset=UTF-8}==body:  {"msgtype":"text","text":{"content":"C端注销失败"}}
+2018-02-27 at 15:16:01 CST INFO  util.httpclient.HTTPClient 43 httpResponse - =====判断头信息是否为空：false
+2018-02-27 at 15:16:01 CST INFO  util.httpclient.HTTPClient 45 httpResponse - ======添加请求头信息
+2018-02-27 at 15:16:01 CST INFO  util.httpclient.HTTPClient 48 httpResponse - Content-Type:application/json;charset=UTF-8
+2018-02-27 at 15:16:01 CST INFO  util.httpclient.HTTPClient 56 httpResponse - {"msgtype":"text","text":{"content":"C端注销失败"}}
+2018-02-27 at 15:16:01 CST INFO  util.httpclient.HTTPClient 194 dopost - =====响应码为：HTTP/1.1 200 OK
+2018-02-27 at 15:16:01 CST INFO  util.httpclient.HTTPClient 197 dopost - =====转换后的实体：{"errcode":0,"errmsg":"ok"}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+        <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="%d %-5p [%t] %C{2} (%F:%L) - %m%n"/>
+        </Console>
+        <RollingFile name="log" fileName="logs/log.log" filePattern="logs/log-%d{yyyy-MM-dd-HH}-%i.log" append="true">
+            <PatternLayout pattern="%d{yyyy-MM-dd 'at' HH:mm:ss z} %-5level %class{36} %L %M - %msg%xEx%n"/>
+       	<Policies>
+		<!-- 归档每天的文件 -->
+		<TimeBasedTriggeringPolicy interval="1" modulate="true" />
+		<!-- 限制单个文件大小 -->
+		<SizeBasedTriggeringPolicy size="10 MB" />
+		</Policies>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <root level="info">
+            <appender-ref ref="log"/>
+            <appender-ref ref="Console"/>
+        </root>
+    </Loggers>
+
+</Configuration>
