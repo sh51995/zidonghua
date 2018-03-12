@@ -21,7 +21,7 @@ public class test {
 		
 		try {
 			int s=0;
-			for(int i=0;i<100;i++){
+			for(int i=0;i<10000;i++){
 			XmlSuite suite = new XmlSuite();
 			suite.setName("TmpSuite");
 			XmlTest test = new XmlTest(suite);
@@ -43,7 +43,7 @@ public class test {
 	       };
 	       System.out.println("===========i:"+i);
 	       System.out.println("===========s:"+s);
-	        Thread.sleep(20000);
+	        Thread.sleep(500000);
 			}
 			
 			} catch (Exception e) {
