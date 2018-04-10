@@ -6,10 +6,11 @@ import java.io.InputStreamReader;
 
 import org.apache.commons.exec.*;
 
+import util.CmdUtil;
+
 
 public class AppiumUtil {
-	static Process p;
-		
+	static Process p;	
 	 public static void appiumStop() throws IOException {
 		 Runtime.getRuntime().exec("taskkill /F /IM node.exe"); 
 		 System.out.println("Appium server stop");
@@ -59,8 +60,18 @@ public class AppiumUtil {
 //		return bool;
 //	    }
 	 
+	 
+	 public static String getDevices(){
+		 String de=CmdUtil.CMD("adb devices");
+		 System.out.println(de.indexOf("attached")+8);
+		 String devices=de.substring(de.indexOf("attached")+8);
+		 devices=devices.substring(0,devices.indexOf("device"));
+		 devices=devices.trim();
+		 return devices;
+	 }
 	 public static void main(String[] args) throws IOException, InterruptedException {
-		 appiumStart();
-//		 appiumStop();
+		 getDevices();
+	//	 appiumStart();
+	//	 appiumStop();
 	}
 }

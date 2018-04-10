@@ -1,48 +1,21 @@
 package ui_app.server.merchant;
 
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.Map;
-import java.util.concurrent.TimeUnit;
-
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.DesiredCapabilities;
 
 import api.server.LogicB;
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.android.AndroidDriver;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
-import ui_app.util.DingDing;
+import ui_app.server.GetAppiumDriver;
 import ui_app.util.SeleniumUtil;
 import util.mysql.entity.model.UserDevice;
 
 public class MerchantApp {
 	static Logger log=Logger.getLogger(MerchantApp.class);
 	public static AppiumDriver<WebElement> getMerchantDriver(AppiumDriver<WebElement> driver){
-	     DesiredCapabilities capabilities = new DesiredCapabilities();  
-	 //       capabilities.setCapability("deviceName","0123456789ABCDEF");  
-	  //      capabilities.setCapability("deviceName","b2bcc292");  
-	   //  	capabilities.setCapability("deviceName","JJRDU16B08015928");  
-	     	capabilities.setCapability("deviceName","A10ABN5GQRHS"); 
-	        capabilities.setCapability("automationName","Appium");  
-	        capabilities.setCapability("platformName","Android");  
-	        capabilities.setCapability("platformVersion","23");  
-	          
-	       //配置测试apk  
-	        capabilities.setCapability("appPackage", "com.gl365.android.merchant");  
-	        capabilities.setCapability("appActivity", "com.gl365.android.merchant.MainActivity");  
-	        capabilities.setCapability("sessionOverride", true);    //每次启动时覆盖session，否则第二次后运行会报错不能新建session  
-	        capabilities.setCapability("unicodeKeyboard", true);    //设置键盘  
-	        capabilities.setCapability("resetKeyboard", false);     //设置默认键盘为appium的键盘  
-	        try {
-				driver = new AndroidDriver<WebElement>(new URL("http://127.0.0.1:4723/wd/hub"),capabilities) ;
-			} catch (MalformedURLException e) {
-				log.error(e.getStackTrace());
-			}
-	        driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);  
-	       return driver; 
+		return GetAppiumDriver.getDriver(driver, "com.gl365.android.merchant", "com.gl365.android.merchant.MainActivity"); 
 	}
 	
 	
